@@ -1,0 +1,6 @@
+build/*
+env/*
+dist/*
+flask_example.egg-info/*
+app/__pycache__/*
+.pytest_cache/*

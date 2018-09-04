@@ -1,0 +1,27 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+   <h1>Welcomme to linked list viewer</h1>
+   {% if linked_list.is_empty %}
+        []
+    {% else %}
+        [{{linked_list.to_list[0]}}]
+        {% for item in linked_list.to_list[1:] %}
+            ->[{{item}}]
+        {% endfor %}
+    {% endif %} <br />
+    
+    <form action="/" method="POST">
+    Input a node!
+    <input type="text" name="item" />
+    <input type="submit" value="submit" />
+
+    </form>
+</body>
+</html>
